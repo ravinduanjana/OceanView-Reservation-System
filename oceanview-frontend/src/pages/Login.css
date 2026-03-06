@@ -1,0 +1,117 @@
+/* Background */
+
+.login-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+
+.login-card{
+    width:380px;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+    text-align:center;
+    animation:fadeIn 0.5s ease;
+}
+
+/* Title */
+
+.login-title{
+    margin-bottom:5px;
+    font-size:26px;
+    color:#333;
+}
+
+.login-subtitle{
+    color:#777;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+/* Inputs */
+
+.login-input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.login-input:focus{
+    border-color:#4facfe;
+    outline:none;
+    box-shadow:0 0 5px rgba(79,172,254,0.5);
+}
+
+/* Password field */
+
+.password-field{
+    position:relative;
+}
+
+.toggle-password{
+    position:absolute;
+    right:12px;
+    top:12px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* Button */
+
+.login-button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#4facfe;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-button:hover{
+    background:#3b8df5;
+}
+
+/* Register text */
+
+.register-text{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.register-link{
+    margin-left:5px;
+    color:#4facfe;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register-link:hover{
+    text-decoration:underline;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
